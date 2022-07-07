@@ -1,20 +1,20 @@
 module jomod
-	use jmod, only: j_nfunctions_
 	use o1_mod, only: o1_nfunctions
+	use jmod, only: j_nfunctions_
 	use o2_mod, only: o2_nfunctions
 	use o3_mod, only: o3_nfunctions
-	use jmod, only: j_noptions_
 	use o1_mod, only: o1_noptions
+	use jmod, only: j_noptions_
 	use o2_mod, only: o2_noptions
 	use o3_mod, only: o3_noptions
-	use jmod, only: j_nobjecttypes_
 	use o1_mod, only: o1_nobjecttypes
+	use jmod, only: j_nobjecttypes_
 	use o2_mod, only: o2_nobjecttypes
 	use o3_mod, only: o3_nobjecttypes
-	use jmod, only: j_ncodeoptions_
 	use o1_mod, only: o1_ncodeoptions
 	use o2_mod, only: o2_ncodeoptions
 	use o3_mod, only: o3_ncodeoptions
+	use jmod, only: j_ncodeoptions_
 	use jmod, only: j_minarg_
 	use o1_mod, only: o1_minarg
 	use o2_mod, only: o2_minarg

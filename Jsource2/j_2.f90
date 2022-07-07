@@ -162,7 +162,7 @@ subroutine j_jinit0(jparf)
 	!write(6,*)'>44',lencmd,istcmd,cmd
 	if(.not.j_inited)then
 !the following is updated with the J-precompiler,DO NOT CHANGE ANYTHING
-		j_title='j: j3.0 29.  6. 2022 (c) Juha Lappi and Natural Resources Institute Finland'
+		j_title='j: j3.0  7.  7. 2022 (c) Juha Lappi and Natural Resources Institute Finland'
 		write(6,*)j_title
 		write(6,1357)'j',j_nfunctions_,j_noptions_,j_nobjecttypes_
 		write(6,1357)o1_title,o1_nfunctions,o1_noptions,o1_nobjecttypes
@@ -320,27 +320,27 @@ subroutine j_jinit0(jparf)
 end subroutine j_jinit0 !subroutine jinit0()
 
 subroutine j_jinit(jparf)
+	use o1_mod, only: o1_functions
+	use o1_mod, only: o1_nfunctions
 	use jmod, only: j_isanyin
 	use jmod, only: j_functions
 	use jmod, only: j_nfunctions_
-	use o1_mod, only: o1_functions
-	use o1_mod, only: o1_nfunctions
 	use o2_mod, only: o2_functions
 	use o2_mod, only: o2_nfunctions
 	use o3_mod, only: o3_functions
 	use o3_mod, only: o3_nfunctions
-	use jmod, only: j_options
-	use jmod, only: j_noptions_
 	use o1_mod, only: o1_options
 	use o1_mod, only: o1_noptions
+	use jmod, only: j_options
+	use jmod, only: j_noptions_
 	use o2_mod, only: o2_options
 	use o2_mod, only: o2_noptions
 	use o3_mod, only: o3_options
 	use o3_mod, only: o3_noptions
-	use jmod, only: j_objecttypes
-	use jmod, only: j_nobjecttypes_
 	use o1_mod, only: o1_objecttypes
 	use o1_mod, only: o1_nobjecttypes
+	use jmod, only: j_objecttypes
+	use jmod, only: j_nobjecttypes_
 	use o2_mod, only: o2_objecttypes
 	use o2_mod, only: o2_nobjecttypes
 	use o3_mod, only: o3_objecttypes

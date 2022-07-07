@@ -11507,8 +11507,8 @@ function j_option_name(iopt,le)
 	use jmod, only: j_noptions_
 	use jmod, only: j_options
 	use jomod, only: j_nopts1
-	use jomod, only: j_noptions
 	use o1_mod, only: o1_options
+	use jomod, only: j_noptions
 	use jomod, only: j_nopts2
 	use o2_mod, only: o2_options
 	use o3_mod, only: o3_options
